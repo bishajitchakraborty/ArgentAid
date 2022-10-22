@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -13,7 +14,7 @@
          <!-- <---------------------------Topper Part---------------------------------------------> 
             <div class="bg-green-600">
                 <div class=" md:w-3/5 w-full  text-white py-2 mx-auto flex justify-between">
-                    <div class="flex flex-wrap">
+                    <div class="flex flex-wrap sm:pl-0 pl-2">
                         <div class="flex pr-4 items-center">
                             <i class="fa-solid fa-phone pr-1 text-base"></i>
                             <h2 class="text-sm">01777777777</h2>
@@ -34,34 +35,48 @@
 
 
        <!-- <---------------------------Menu Bar Part--------------------------------------------->
-        <div class="bg-gray-600">
-            <div class=" md:w-3/5 w-full pt-4 text-white py-2 mx-auto items-center flex  justify-between">
-                <div class="flex  items-center">
-                    <div class="w-4 h-4 bg-gray-50 ">
+        <!-- -------------------------------------------------------------- -->
 
-                    </div>
-                    <div>
-                        <p class="text-2xl pl-2">HelpHub</p>
-                    </div>
-                </div>
+<div class="bg-gray-600">
+    <nav class="navbar sm:pl-0 pl-2 bg-gray-600 md:w-3/5  mx-auto">
+        <!-- LOGO -->
+        <div class="flex  items-center">
+            <div class="w-4 h-4 bg-gray-50 ">
 
-                <div>
-                    <div class="menu text-sm" id="menu">
-                        <a class="active pr-4" href="#">Home</a>
-                        <a class="pr-4" href="#">Causes</a>
-                        <a class="pr-4" href="#">About</a>
-                        <a class="pr-4" href="#">Pages</a>
-                        <a class="pr-4" href="#">News</a>
-                        <a href="#">Contacts</a>
-                    
-                    </div>
-                </div>
-                <div class="rounded-lg flex bg-green-600 items-center">
-                    <button class="text-sm p-2">Donate Now</button>
-                    <i class="fa-solid fa-heart pr-2"></i>
-                </div>
-          </div>
+            </div>
+            <div>
+                <p class="text-2xl pl-2">HelpHub</p>
+            </div>
         </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu bg-gray-600">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Causes</a></li>
+            <li><a href="/">About</a></li>
+            <li class="services">
+              <a href="/">Services</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown bg-gray-600">
+                <li><a href="/">Galley </a></li>
+                <li><a href="/">Events</a></li>
+                <li><a href="/">Our Team</a></li>
+              </ul>
+            </li>
+            <li><a href="/">News</a></li>
+            <li><a href="/">Contact</a></li>
+            <div class="rounded-lg flex bg-green-600 items-center">
+                <button class="text-sm p-2">Donate Now</button>
+                <i class="fa-solid fa-heart pr-2"></i>
+            </div>
+          </div>
+        </ul>
+      </nav>
+</div>
 
          <!-- <---------------------------Home Part--------------------------------------------->
             <div class="bg-gray-600">
@@ -91,7 +106,7 @@
 
              <!-- <---------------------------Footer Part-----------------------------------------------------> 
         <div class="md:w-3/5 flex flex-wrap my-16 mx-auto">
-            <div class="md:w-1/4 w-full">
+            <div class="md:w-1/4 w-full sm:pl-0 pl-2">
                 <div class="flex pb-4 items-center">
                     <div class="w-4 h-4 bg-green-600 ">
 
@@ -119,7 +134,7 @@
                 <h2 class="text-sm pb-2">0ur team</h2>
                 <h2 class="text-sm pb-2">News</h2>
             </div>
-            <div class="md:w-1/4 w-full">
+            <div class="md:w-1/4 w-full sm:pl-0 pl-2">
                 <h2 class="text-xl text-green-600 pb-4">Contact Info</h2>
                 <div class="flex items-center pb-4 pl-2">
                     <div>
@@ -151,7 +166,7 @@
                 </div>
             </div>
             </div>
-            <div class="md:w-1/4 w-full">
+            <div class="md:w-1/4 w-full sm:pl-0 pl-2">
                 <h2 class="text-xl text-green-600 pb-4">Subscribe to 0ur Newsletter</h2>
                 <p class="text-sm ">
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
